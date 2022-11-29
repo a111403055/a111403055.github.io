@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <header>
+        <h1 class="title">My Todo List</h1>
+    </header>
+    
+    <section class="card">
+        <form - name="add_list">
+            <div>
+                <p class="inline">待辦事項</p>
+                <input type="text" id="todo_title" class="text" />
+            </div>
+            <div class="a">
+                <p class="inline">到期日期</p>
+                <input 
+                    class="inline date"
+                    id="month"
+                    type="number"
+                    min="1"
+                    max="12"
+                    placeholder="M"
+                    required
+                />
+                <input
+                    class="date"
+                    id="date"
+                    type="number"
+                    min="1"
+                    max="31"
+                    placeholder="D"
+                    required
+                />
+            </div>
+            <button id="submit" type="submit" class="submit">Add to List</button>
+        </form>
+    </section>
+
+    <section id = "insert_section" class="insert_section">
+        <div class = "todo">
+            <p class = "todo_title">太極拳練功</p>
+            <p class = "todo_time">11/23</p>            
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>
